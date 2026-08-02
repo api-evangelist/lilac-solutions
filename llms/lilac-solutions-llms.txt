@@ -1,0 +1,47 @@
+# Lilac Solutions
+
+> Lilac Solutions is an Oakland, California climate-technology company (founded 2016) that
+> builds direct lithium extraction (DLE) systems around proprietary ion exchange media.
+> Its ion exchange beads and modular brine processing plants recover battery-grade lithium
+> from high-grade, low-grade and complex brines without evaporation ponds. Lilac sells
+> industrial process technology and hardware to lithium producers. It publishes **no public
+> API, developer portal, SDK, or machine-readable API contract**.
+
+generated: 2026-08-01
+method: generated
+source: apis.yml + verified public pages on lilacsolutions.com
+
+## Company
+
+- [Lilac Solutions](https://lilacsolutions.com/): Direct lithium extraction technology for any brine, anywhere.
+- [About](https://lilacsolutions.com/about): Company overview, founding (2016), leadership team.
+- [Technology](https://lilacsolutions.com/technology): Ion exchange media and the DLE process; generation-5 white paper downloads.
+- [Projects](https://lilacsolutions.com/projects): Mini-pilot, field-pilot and commercial deployments (Great Salt Lake/Utah, Nevada, Argentina, Chile, Germany, Indonesia).
+- [News](https://lilacsolutions.com/news): Dated company news and technical posts.
+- [Careers](https://lilacsolutions.com/careers): Open roles.
+- [Contact](https://lilacsolutions.com/contact): General contact form; press@lilacsolutions.com for press inquiries.
+- [LinkedIn](https://www.linkedin.com/company/lilac-solutions/)
+
+## Legal
+
+- [Privacy Policy (PDF, effective 2024-11-12)](https://lilac-solutions.files.svdcdn.com/production/PDFs/PAGBAM_111224.pdf)
+- [Cookie Consent Policy](https://lilacsolutions.com/cookie-consent-policy)
+
+## API surface
+
+There is none. As of 2026-08-01 the following were probed and returned nothing:
+
+- No OpenAPI/Swagger at any host (`/openapi.json`, `/swagger.json`, `/api-docs`, `/docs` all 404 on lilacsolutions.com; `api.`, `docs.`, `developer.`, `portal.` subdomains do not resolve in DNS).
+- No GraphQL endpoint, no MCP server, no A2A agent card (`/.well-known/agent-card.json` and `/.well-known/agent.json` both 404 on every host).
+- No `/.well-known/` discovery documents of any kind (see `well-known/lilac-solutions-well-known.yml`).
+- No first-party SDKs or client libraries on npm, PyPI or any other registry; the `github.com/lilacsolutions` namespace exists but is empty (0 public repositories, no profile metadata) and is not verifiably first-party.
+- No status page, changelog, sandbox, CLI, or webhook/event surface.
+
+Lilac Solutions is an industrial hardware and process-technology vendor, not an API provider.
+Treat this record as company identity only.
+
+## Artifacts in this repo
+
+- [apis.yml](apis.yml): APIs.json 0.20 company record.
+- [security/lilac-solutions-domain-security.yml](security/lilac-solutions-domain-security.yml): probed TLS/HSTS/DNSSEC/CAA/SPF/DMARC posture.
+- [well-known/lilac-solutions-well-known.yml](well-known/lilac-solutions-well-known.yml): probed `/.well-known/` surface (all misses, recorded).

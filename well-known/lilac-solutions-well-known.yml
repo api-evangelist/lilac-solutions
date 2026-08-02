@@ -1,0 +1,61 @@
+generated: '2026-08-01'
+method: probed
+source: live HTTP probes of every Lilac Solutions host
+note: >-
+  Every /.well-known/ discovery path was probed on the corporate host and on the
+  www and info (marketing/landing) subdomains. Nothing was served. No document was
+  saved and no WellKnown / SecurityTxt / APICatalog pointer is wired in apis.yml,
+  because none of these documents exist. Lilac Solutions publishes no API host,
+  developer portal or docs host; api., docs., developer., portal., trust. and
+  status. subdomains do not resolve in DNS.
+hosts_probed:
+- host: lilacsolutions.com
+  resolves: true
+- host: www.lilacsolutions.com
+  resolves: true
+- host: info.lilacsolutions.com
+  resolves: true
+  note: HubSpot marketing landing host (white-paper downloads); root returns 404
+- host: api.lilacsolutions.com
+  resolves: false
+- host: docs.lilacsolutions.com
+  resolves: false
+- host: developer.lilacsolutions.com
+  resolves: false
+- host: portal.lilacsolutions.com
+  resolves: false
+- host: trust.lilacsolutions.com
+  resolves: false
+- host: status.lilacsolutions.com
+  resolves: false
+host: https://lilacsolutions.com
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /.well-known/agent-card.json
+  status: 404
+- path: /.well-known/agent.json
+  status: 404
+- path: /security.txt
+  status: 404
+- path: /llms.txt
+  status: 404
+other_paths:
+- path: /robots.txt
+  status: 200
+- path: /sitemap.xml
+  status: 200
+- path: /humans.txt
+  status: 200
+  note: Craft CMS credits file authored by One Design Company; no security or API content
+x-evidence:
+  fetched: '2026-08-01'
+  method: curl HEAD/GET with redirects followed, 12s timeout
