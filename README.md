@@ -64,29 +64,81 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Lilac Solutions is an Oakland, California climate-technology company founded in 2016 that develops
-direct lithium extraction (DLE) technology built on proprietary ion exchange media. Its ion exchange
-beads and modular brine processing systems recover battery-grade lithium from high-grade, low-grade
-and complex brines without evaporation ponds. Lilac runs mini-pilot, field-pilot and commercial
-deployments across the Great Salt Lake in Utah, Nevada, Argentina, Chile, Germany and Indonesia, and
-manufactures its ion exchange media on a dedicated line in Nevada.
+Lilac Solutions is an Oakland, California climate-technology company founded in 2016 that develops direct lithium extraction (DLE) technology built on proprietary ion exchange media. Its ion exchange beads and modular brine processing systems pull battery-grade lithium from high-grade, low-grade and complex brines without evaporation ponds, cutting water use and shrinking the land footprint and time-to-production of conventional lithium operations. Lilac operates mini-pilot, field-pilot and commercial deployments across the Great Salt Lake in Utah, Nevada, Argentina, Chile, Germany and Indonesia, and manufactures its ion exchange media on a dedicated production line in Nevada. The company is venture-backed with roughly $350M raised, employs about 200 people, and sells industrial hardware and process technology to lithium producers — it publishes no public developer platform, API, or machine-readable API contract.
 
-- https://lilacsolutions.com/
+**Areas:** Company · Lithium · Direct Lithium Extraction · Ion Exchange · Critical Minerals · Battery Materials · Mining Technology · Climate Tech · Energy Transition · Industrial Hardware
 
-## API surface
+## Lilac Solutions on APIs.io
 
-**None.** Lilac Solutions sells industrial process technology and hardware to lithium producers; it
-publishes no developer portal, API, SDK, or machine-readable API contract. Probed 2026-08-01:
+Everything profiled for Lilac Solutions is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/lilac-solutions/](https://apis.io/providers/lilac-solutions/)** — or go straight to one of the APIs or properties below.
 
-- No OpenAPI/Swagger at any host — `api.`, `docs.`, `developer.`, `portal.` subdomains do not resolve.
-- No GraphQL, no MCP server, no A2A agent card, no `/.well-known/` discovery documents.
-- No first-party packages on npm, PyPI or other registries.
+### Published properties
 
-## Artifacts
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-| Path | What |
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Lilac Solutions Domain Security](https://apis.io/security/lilac-solutions/lilac-solutions-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://lilacsolutions.com/)
+- [Blog](https://lilacsolutions.com/news)
+- [Privacy policy](https://lilac-solutions.files.svdcdn.com/production/PDFs/PAGBAM_111224.pdf)
+
+## API Evangelist rating
+
+**Kin Score 7.5** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
 |---|---|
-| `apis.yml` | APIs.json 0.20 company record + verified link properties |
-| `security/lilac-solutions-domain-security.yml` | Probed TLS/HSTS/DNSSEC/CAA/SPF/DMARC posture |
-| `well-known/lilac-solutions-well-known.yml` | Probed `/.well-known/` surface (all misses, recorded) |
-| `llms/lilac-solutions-llms.txt` | Generated llms.txt company summary |
+| Discoverability | 57.1 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 2.4 |
+| Access clarity | 10.5 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 8.2** — Energy & Utilities
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/lilac-solutions/](https://apis.io/providers/lilac-solutions/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Lilac Solutions: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/lilac-solutions/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
